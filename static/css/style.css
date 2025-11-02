@@ -1,0 +1,134 @@
+.video-background video {
+    position: absolute; /* Agar video tetap berada di belakang konten lainnya */
+    top: 0;
+    left: 0;
+    width: 100%; /* Lebar video memenuhi halaman */
+    height: 100%; /* Tinggi video memenuhi halaman */
+    object-fit: cover; /* Agar video tetap proporsional dan menutupi seluruh halaman */
+    z-index: -1; /* Pastikan video ada di belakang konten lainnya */
+}
+
+/* Gaya untuk konten lainnya */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff; /* Anda bisa menggunakan warna latar belakang cadangan di sini */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative; /* Agar konten berada di atas video */
+}
+
+.container {
+    text-align: center;
+    padding: 80px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.679); /* Warna putih dengan transparansi */
+    backdrop-filter: blur(10px); /* Efek blur */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Bayangan */
+    width: 80%;
+    max-width: 500px;
+}
+
+
+/* Home Page Specific */
+.home-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-title img {
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.corner {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #2563eb; 
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.disabled {
+    background-color: grey;
+    color: white;
+    cursor: not-allowed;
+}
+
+.text {
+    font-size: 12px;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #3c4250;
+}
+
+/* Form for Text Question */
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 90%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border-color: #2563eb;
+}
+
+.feedback {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.feedback {
+    color: #2563eb; /* Warna biru untuk jawaban benar */
+}
+
+.feedback:contains('Salah') {
+    color: #e11d48; /* Warna merah untuk jawaban salah */
+}

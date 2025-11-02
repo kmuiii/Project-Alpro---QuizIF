@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Pertanyaan</title>
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay loop muted>
+            <source src="{{ url_for('static', filename='img/motion.mp4') }}" type="video/mp4">
+        </video>
+    </div>
+    <div class="container">
+        <div class="question-box">
+            <h1>{{ question["question"] }}</h1>
+            {% if feedback %}
+            <p class="feedback">{{ feedback }}</p>
+            {% endif %}
+            {% if question["type"] == "pg" %}
+            <div class="options">
+                <form method="post">
+                    {% for option in question["options"] %}
+                    <button type="submit" name="answer" value="{{ option }}">{{ option }}</button>
+                    {% endfor %}
+                </form>
+            </div>
+            {% elif question["type"] == "text" %}
+            <form method="post">
+                <input type="text" name="answer" placeholder="Ketik jawaban di sini" required>
+                <button type="submit">Submit</button>
+            </form>
+            {% endif %}
+        </div>        
+    </div>
+</body>
+</html>

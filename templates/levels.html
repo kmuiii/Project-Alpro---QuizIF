@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Levels</title>
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay loop muted>
+            <source src="{{ url_for('static', filename='img/motion.mp4') }}" type="video/mp4">
+        </video>
+    </div>
+    <div class="container">
+        <h1>Pilih Level</h1>
+        <div class="levels-container">
+            {% for level in range(1, 5) %}
+            <button class="{{ 'disabled' if not completed_level[level - 1] }}" 
+                    onclick="location.href='/level/{{ level }}'" 
+                    {% if not completed_level[level - 1] %}disabled{% endif %}>
+                Level {{ level }}
+            </button>
+            {% endfor %}
+            <button class="corner" onclick="location.href='/'">balik home</button>
+        </div>
+    </div>
+</body>
+</html>

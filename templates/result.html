@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Kuis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay loop muted>
+            <source src="{{ url_for('static', filename='img/motion.mp4') }}" type="video/mp4">
+        </video>
+    </div>
+    <div class="container">
+        <h1>Hasil Kuis - Level {{ level }}</h1>
+
+        <p>Skor kamu: {{ result }}%</p>
+        
+        {% if result > 60 %}
+        <p>Naiss! Kamu lulus di level {{ level }} karena skormu lebih dari 60%.</p>
+        {% else %}
+        <p>Yahh! Kamu belum lulus di level {{ level }}. Coba lagi yah!</p>
+        {% endif %}
+
+        <br>
+
+        <a href="{{ url_for('levels') }}">
+            <button class="btn">Kembali ke Pilih Level</button>
+        </a>
+
+        {% if level < 4 and completed_level[level] %}
+        <a href="{{ url_for('start_level', level=level + 1) }}">
+            <button class="btn">Lanjut ke Level {{ level + 1 }}</button>
+        </a>
+        {% endif %}
+    </div>
+</body>
+</html>

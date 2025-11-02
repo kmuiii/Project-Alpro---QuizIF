@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>QuizIF</title>
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay loop muted>
+            <source src="{{ url_for('static', filename='img/motion.mp4') }}" type="video/mp4">
+        </video>
+    </div>
+    <div class="container">
+        <div class="home-title">
+            <img src="{{ url_for('static', filename='img/dice.png') }}" alt="Dice Icon">
+            <h1>QuizIF</h1>
+        </div>
+
+        <p class="text"><b>Rules: </b></p>
+            <p class="text"><i>Pada pertanyaan isian singkat, pastikan jawaban kamu huruf kecil semua dan hanya 1 kata</i></p>
+        <button onclick="location.href='/levels'">Gazz!</button>
+    </div>
+</body>
+</html>

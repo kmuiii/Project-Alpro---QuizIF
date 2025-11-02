@@ -1,0 +1,33 @@
+
+{
+  "levels": {
+    "1": [
+      {"type": "pg", "question": "Apa unsur yang paling melimpah di atmosfer bumi?", "options": ["Oksigen", "Nitrogen", "Karbon dioksida", "Hidrogen"], "answer": "Nitrogen"},
+      {"type": "pg", "question": "Planet manakah yang dikenal dengan planet merah?", "options": ["Mars", "Venus", "Jupiter", "Merkurius"], "answer": "Mars"},
+      {"type": "text", "question": "Tahun berapa Unsoed dibangun hayoo?", "answer": "1963"},
+      {"type": "pg", "question": "Siapa yang pertama kali menginjakkan kaki di bulan?", "options": ["Neil Armstrong", "Yuri Gagarin", "Buzz Aldrin", "Alan Shepard"], "answer": "Neil Armstrong"},
+      {"type": "text", "question": "kapas 1kg sama batu 1kg, banyakan mana?", "answer": "kapas"}
+    ],
+    "2": [
+      {"type": "pg", "question": "Apa nama ilmiah dari tumbuhan padi?", "options": ["Zea mays", "Oryza sativa", "Triticum aestivum", "Solanum tuberosum"], "answer": "Oryza sativa"},
+      {"type": "pg", "question": "1+1=?", "options": ["2", "11", "10", "1"], "answer": "2"},
+      {"type": "text", "question": "Nih uncut punya berapa fakultas dah?", "answer": "12"},
+      {"type": "pg", "question": "Kenapa di komputer ada tombol namanya enter?", "options": ["enter=konfirm", "ya masa entar?wkwk", "enter=ke bawa", "mikir amat-_"], "answer": "enter=konfirm"},
+      {"type": "text", "question": "sekarang hari minggu, 2027 hari lagi hari apa dong?", "answer": "kamis"}
+    ],
+    "3": [
+      {"type": "pg", "question": "Mata-mata apa yang nggak bisa pake kacamata?", "options": ["Mata Najwa", "mata kiri mataku", "Mata Kaki", "mata-mata"], "answer": "Mata Kaki"},
+      {"type": "pg", "question": "Orang pintar minum?", "options": ["tolak angin", "yaiyalah minum", "parahmen", "ga, minum itu dosa"], "answer": "yaiyalah minum"},
+      {"type": "text", "question": "Benda apa yang kalau tengkurap ada isinya, tapi kalau terbuka malah kosong?", "answer": "topi"},
+      {"type": "pg", "question": "apa fungsi utama struct", "options": ["nyimpan banyak data beda tipe", "nyimpen banyak data tipe sama", "deklarasi array", "buat parameter fungsi"], "answer": "nyimpan banyak data beda tipe"},
+      {"type": "text", "question": "Dipeluk bukan anak, dipetik bukan buah, benda apakah itu?", "answer": "gitar"}
+    ], 
+    "4": [
+      {"type": "pg", "question": "desimal 171, bentuk heksadesimalnya apa?", "options": ["AD", "AB", "BB", "BF", "AC"], "answer": "AB"},
+      {"type": "text", "question": "kalo pake tangan kanan itu makanan, kalo pake tangan kiri berarti?", "answer": "makiri"},
+      {"type": "text", "question": "kalo flight ke Singapura, kita harus pake?", "answer": "celana"},
+      {"type": "text", "question": "Apa bahasa pemrograman yang digunakan untuk web di sisi server?", "answer": "python"},
+      {"type": "text", "question": "apa integral dari -sin?", "answer": "cos"}
+    ]
+  }
+}
