@@ -1,6 +1,6 @@
-# 🎮 QuizIF — Aplikasi Kuis Interaktif Berbasis Web
+# QuizIF — Aplikasi Kuis Interaktif Berbasis Web
 
-## 👩‍💻 Anggota Kelompok
+## Anggota Kelompok
 1. **Bunga Budi Ambar Wati** (H1D024006)  
 2. **Wati Rustati** (H1D024007)  
 3. **Sani Aprillia Anjani** (H1D024011)  
@@ -9,7 +9,7 @@
 
 ---
 
-## 📘 Deskripsi Proyek
+## Deskripsi Proyek
 **QuizIF** adalah aplikasi kuis berbasis web dengan beberapa level permainan.  
 Setiap level berisi kumpulan pertanyaan yang terbagi menjadi dua jenis:
 - **Pilihan Ganda (Multiple Choice)**  
@@ -20,7 +20,7 @@ Setiap jawaban benar akan menambah **poin skor**, sedangkan jawaban salah tidak 
 
 ---
 
-## 🧩 Fungsi Game
+## Fungsi Game
 a. **Sumber Hiburan** — Menyajikan tantangan yang menyenangkan dan interaktif.  
 b. **Alat Pembelajaran** — Membantu memperdalam pemahaman dan memperkenalkan topik baru.  
 c. **Meningkatkan Kemampuan Kognitif** — Melatih berpikir cepat, analitis, dan daya ingat.  
@@ -30,7 +30,7 @@ f. **Alat Ukur Pengetahuan** — Menilai sejauh mana pemain memahami materi.
 
 ---
 
-## 🕹️ Alur Permainan QuizIF
+## Alur Permainan QuizIF
 1. **Halaman Utama**  
    Pengguna disambut dengan video latar dan judul *QuizIF*.  
    Terdapat instruksi aturan permainan serta tombol **“Play Now”** untuk memulai.
@@ -51,7 +51,7 @@ f. **Alat Ukur Pengetahuan** — Menilai sejauh mana pemain memahami materi.
 
 ---
 
-## 💡 Tujuan
+## Tujuan
 Proyek ini dikembangkan untuk menggabungkan unsur **pembelajaran dan hiburan**, menciptakan pengalaman belajar yang interaktif dan menyenangkan melalui permainan kuis.
 
 ---
